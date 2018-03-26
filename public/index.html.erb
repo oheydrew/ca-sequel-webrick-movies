@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies: THE SEQUEL</title>
+</head>
+<body>
+    <h1><strong>Welcome to WEBRICK MOVIES: THE SEQUEL!! 😎</strong></h1>
+
+    <% movies.each do |movie|%>
+    <ul>
+      <li><%= '<img src=' + movie[:cover_url] %>></li>
+      <li><strong><%=movie[:title]%></strong> </li>
+      <li>Rating: <%=movie[:rating]%> out of 10 </li>
+      <li>Description: <%= movie[:description] %> </li>
+      <hr>
+    </ul>
+  <% end %>
+    
+</body>
+</html>
